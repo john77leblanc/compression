@@ -1,0 +1,48 @@
+Original String
+ajsmfkkcmnasknanamsmcasduenanchsnjsjfkksmsnsjnaabeh
+
+Table format
+  ajs|mfk|kcm|nas|kna|nam|smc|asd|uen|anc|hsn|jsj|fkk|sms|nsj|naa|beh
+a| 4 | 0 | 0 | 3 | 2 | 3 | 0 | 4 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 5 | 0
+b| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4
+c| 0 | 0 | 3 | 0 | 0 | 0 | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+d| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+e| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3
+f| 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0
+h| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 2
+k| 0 | 2 | 4 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | 0
+j| 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | 0 | 2 | 0 | 0
+m| 0 | 4 | 2 | 0 | 0 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0
+n| 0 | 0 | 0 | 4 | 3 | 4 | 0 | 0 | 2 | 3 | 2 | 0 | 0 | 0 | 4 | 4 | 0
+s| 2 | 0 | 0 | 2 | 0 | 0 | 4 | 3 | 0 | 0 | 3 | 3 | 0 | 6 | 3 | 0 | 0
+---------------------------------------------------------------------
+u| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+
+Columns
+400000003002|000003020400|003000040200|300000000042|200000040030|300000000240|
+002000000304|400200000003|000030000020|402000000030|000000400023|000000006003|
+000004050000|000000000306|000000002043|500000000040|040030200000
+
+Columns minus proceeding 0's
+400000003002|0000030204|0030000402|300000000042|20000004003|30000000024|
+002000000304|400200000003|00003000002|40200000003|000000400023|000000006003|
+00000405|000000000306|000000002043|50000000004|0400302
+
+Columns converted to characters
+daaaaaaacaab|aaaaacabad|aacaaaadab|caaaaaaaaadb|baaaaaadaac|caaaaaaaabd|
+aabaaaaaacad|daabaaaaaaac|aaaacaaaaab|dabaaaaaaac|aaaaaadaaabc|aaaaaaaafaac|
+aaaaadae|aaaaaaaaacaf|aaaaaaaabadc|eaaaaaaaaad|adaacab
+
+a's converted to numbers
+d7ac2ab|5acabad|2ac4adab|c9adb|b6ad2ac|c8abd|2ab6acad|d2ab7ac|4ac5ab|dab7ac|6ad3abc|
+8af2ac|5adae|9acaf|8abadc|e9ad|ad2acab
+
+Messing around with numerical positions
+d7c2b5c1b1d2c4d1bc9dbb6d2cc8bd2b6c1dd2b7c4c5bd1b7c6d3bc8f2c5d1e9c1f8b1dce9d1d2c1b
+.|.|.|.|.|.|.|.|..|...|.|..|..|.|.|..|.|.|.|..|.|.|.|..|.|.|.|.|.|.|.|...|.|.|.|.
+ 7 2 5 1 1 2 4 1  9   6 2  8  2 6 1  2 7 4 5  1 7 6 3  8 2 5 1 9 1 8 1   9 1 2 1
+
+ 72511241   9   62   8   261   2745   1763    82519181   9121
+
+Final converted string
+a.fhkjmns/d7c2b5c1b1d2c4d1bc9dbb6d2cc8bd2b6c1dd2b7c4c5bd1b7c6d3bc8f2c5d1e9c1f8b1dce9d1d2c1b

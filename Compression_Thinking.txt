@@ -1,0 +1,101 @@
+The following figure refers to the position of a character in a chunk of 3 characters.
+
+Figure 1
+
+Positions
+000|001|010|100|011|101|110|111
+ 0   2   3   4   5   6   7   9
+
+Notice that the numbers 1 and 8 are excluded. 
+
+For example, looking at the chunk "aab" we can see that character "a" is found in positions 1 and 2
+The associated number to represent the positional data of "a" from the code would be 7 (110)
+
+Examine the following string of characters:
+abcbbcdafafaccc
+
+Here it is chunked into segments of 3:
+abc|bbc|daf|afa|ccc
+
+If we record the positional data of each character in each segment,
+it would look like the following figure:
+
+Figure 2
+
+   Segments
+  _1_2_3_4_5
+a| 4 0 3 6 0
+b| 3 7 0 0 0
+c| 2 2 0 0 9
+d| 0 0 4 0 0
+f| 0 0 2 3 0
+
+Notice that each column has a sum of 9.
+With this, we can deduct the positional data of the final character
+without needing to record it. Examine the following figure:
+
+Figure 3
+
+   Segments
+  _1_2_3_4_5
+a| 4 0 3 6 0
+b| 3 7 0 0 0
+c| 2 2 0 0 9    9 minus
+d| 0 0 4 0 0    sum of column thus far
+------------    =
+f| 0 0 2 3 0    <--
+
+Next, convert the table to a string of positional data in order by column,
+excluding the positional data of the final character. Examine the figure:
+
+Figure 4
+
+Columns             | 1  | 2  | 3  | 4  | 5
+Character Positions |4320|0720|3004|6000|0090
+
+In knowing how many rows there are in the table format,
+we can now exclude any "0"s from each column proceeding the sum of 9.
+Examine the figure:
+
+Figure 5
+
+Columns             | 1  | 2  | 3  | 4  | 5
+Character Positions |432 |072 |3004|6000|009
+
+The character positions can now be written into a single string.
+Examine the figure:
+
+Figure 6
+
+43207230046000009
+
+Examine the following figure for an association of numbers to letters
+
+Figure 7
+
+0 | 2 | 3 | 4 | 5 | 6 | 7 | 9
+--+---+---+---+---+---+---+--
+a | b | c | d | e | f | g | h
+
+Using this association, convert the numerical string into a string of letters.
+Examine the following figure:
+
+Figure 8
+
+dcbagbcaadfaaaaah
+
+Since the "a" character will be the most common, any sequence of them write as a number for how many in the sequence.
+The character string would then be converted to the following format. Examine the figure:
+
+Figure 9
+
+dcb1gbc2df5h
+
+This new string would then need to be prepended with a key
+of the characters included. Use a "." to represent sequential
+characters between two characters. Use a "/" to represent the
+end of the key. Examine the figure:
+
+Figure 10
+
+a.df/dcbagbc2adf5ah
